@@ -1,0 +1,40 @@
+{{> header}}
+{{> navbar}}
+
+
+div class="container-fluid  bg-light " style="margin-top: 58px; ">
+    <div class="row p-5">
+        <h1 style="text-align: center;">Dashboard</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aut commodi nisi necessitatibus temporibus
+            aperiam et quia alias at officia eius id ea totam veritatis libero odit nostrum, rerum ut eum modi amet
+            earum repudiandae illum! Optio esse vitae cumque recusandae ducimus quas. Voluptate, cum voluptas inventore
+            fugit quae facilis maiores quis sint harum illum vel deserunt magni, ex similique? Ipsam tempora ullam quam
+            corrupti sint repudiandae vel quisquam! Earum officiis vitae aspernatur voluptatibus magni perspiciatis,
+            debitis illo magnam fugit harum necessitatibus ut cum perferendis quaerat natus ipsa! Sunt, autem voluptas
+            praesentium enim fugiat eius molestias ea autem cum. Impedit a voluptas unde ab saepe. Mollitia ut ipsum
+            iure omnis aut ullam, cum unde quia, itaque id tenetur voluptatem vero harum sit optio velit odio nesciunt
+            eos minima neque reiciendis debitis! Esse blanditiis incidunt tempore consectetur cumque hic assumenda
+            quibusdam modi, minima sunt doloribus neque vero tempora, quas, similique totam facilis. Est dolorem
+            accusantium harum, eius tempore soluta sequi exercitationem placeat necessitatibus aperiam reprehenderit
+            similique id quis alias, amet aliquid quod. Adipisci harum est quae architecto vero placeat earum sunt
+            obcaecati eius? Voluptate voluptatem exercitationem iste voluptates totam assumenda, cupiditate aliquid
+            nesciunt quas aut consectetur sequi nobis!</p>
+
+    </div>
+    <div class="row  ">
+        {{#each card}}
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card m-3 " style="border-radius: 30px; overflow:hidden">
+                <img src={{url}} alt=""  height="200px">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>{{title}}</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas molestiae nostrum perferendis
+                        quis
+                        dicta!</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
